@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import stone3 from "../assets/Images/stone3.jpg";
-import heroImage from "../assets/Images/HeroImage1.jpg";
+import HeroImage1 from "../assets/Images/HeroImage1.jpg";
 
 const Hero = () => {
   const secondBoxRef = useRef(null);
@@ -15,7 +15,7 @@ const Hero = () => {
   useGSAP(() => {
     if (!graniteRef.current && !eleganceRef.current) return;
     if (!graniteRef1.current && !eleganceRef1.current) return;
-    if(!boxRef.current) return;
+    if (!boxRef.current) return;
 
     gsap.fromTo(
       secondBoxRef.current,
@@ -23,20 +23,20 @@ const Hero = () => {
       { scale: 1, duration: 1, delay: 0.5 } // Added delay for effect
     );
 
-     gsap.fromTo(
-  boxRef.current,
-  {
-    x: -100,
-    opacity: 0,
-  },
-  {
-    x: 0,
-    opacity: 1,
-    ease: "power3.out",
-    duration: 1.5,
-    delay: 1,
-  }
-);
+    gsap.fromTo(
+      boxRef.current,
+      {
+        x: -100,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        ease: "power3.out",
+        duration: 1.5,
+        delay: 1,
+      }
+    );
 
     gsap.from(graniteRef.current, {
       opacity: 0,
@@ -104,7 +104,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-[65px]">
-        <img src={heroImage} alt="Hero-Image" className="w-full"  ref={boxRef} />
+        <img
+          src={HeroImage1}
+          alt="Hero-Image"
+          className="w-full"
+          ref={boxRef}
+        />
       </div>
     </main>
   );
