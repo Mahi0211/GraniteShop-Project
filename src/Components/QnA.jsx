@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import QuestionInput from "./QuestionInput";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +71,7 @@ const QnA = () => {
         <div className="border-b border-gray-300 py-4" key={index}>
           <button
             onClick={() => handleClick(index)}
-            className="flex justify-between w-full text-left text-lg font-medium focus:outline-none"
+            className="flex justify-between w-full text-left text-lg font-medium focus:outline-none cursor-pointer"
             style={{ fontFamily: "FTHabitMedium" }}
           >
             {item.title}
@@ -88,6 +89,7 @@ const QnA = () => {
           )}
         </div>
       ))}
+      <QuestionInput />
     </div>
   );
 };
