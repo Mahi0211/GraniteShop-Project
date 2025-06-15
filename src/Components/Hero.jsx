@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import stone3 from "../assets/Images/stone3.jpg";
-import HeroImage1 from "../assets/Images/HeroImage1.jpg";
+import HeroImage1 from "../assets/Images/HeroImage.jpg";
 
 const Hero = () => {
   const secondBoxRef = useRef(null);
