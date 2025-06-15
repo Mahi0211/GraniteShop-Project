@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import AboutUs from "./Components/AboutUs";
+import Product from "./Components/Product";
+import Services from "./Components/Services";
+import Collection from "./Components/Collection";
+import QnA from "./Components/QnA";
+import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
+// import MapAndTestimonials from "./Components/MapAndTestimonials";
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <main className="bg-[#F3F4F6]">
+      <Navbar />
+      <Hero />
+      <AboutUs />
+      <Product />
+      <Services />
+      <Collection />
+      <QnA />
+      {/* <MapAndTestimonials /> */}
+      <Projects />
+      <Footer />
+    </main>
+  );
+};
 
-export default App
+export default App;
