@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import stone3 from "../assets/Images/stone3.jpg";
-import HeroImage1 from "../assets/Images/HeroImage.jpg";
+import HeroImage from "../assets/Images/hero_temp.jpg";
 
 const Hero = () => {
   const secondBoxRef = useRef(null);
@@ -105,7 +105,7 @@ const Hero = () => {
       </div>
       <div className="mt-[65px]">
         <img
-          src={HeroImage1}
+          src={HeroImage}
           alt="Hero-Image"
           className="w-full"
           ref={boxRef}
