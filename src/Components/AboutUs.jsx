@@ -29,7 +29,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div ref={aboutRef} className="flex h-[350px] w-full mt-[100px]" id="about">
+    <div ref={aboutRef} className="flex h-[350px] w-full mt-[100px] pl-[20px]" id="about">
       <div
         className="w-1/3 ml-10 flex flex-col justify-between"
         style={{ fontFamily: "FTHabitRegular" }}

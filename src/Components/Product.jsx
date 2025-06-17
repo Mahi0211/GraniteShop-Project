@@ -46,10 +46,10 @@ const Product = () => {
           <span>Excellence</span>
         </h1>
         <button
-          style={{ fontFamily: "FTHabitRegular" }}
-          className="ml-[40px] mt-4 px-6 py-2 bg-white text-black rounded-4xl shadow-md cursor-pointer"
+          style={{ fontFamily: "FTHabitMedium" }}
+          className="ml-[40px] mt-4 px-6 py-2 bg-white text-black text-lg rounded-4xl shadow-md cursor-pointer"
         >
-          VIEW ALL
+          View All
         </button>
       </div>
       <VerticalSwipeCards />

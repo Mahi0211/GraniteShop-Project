@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import img1 from "../assets/Images/GraniteFooter.jpg";
+import ContactUs from "./ContactUs";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,12 +30,12 @@ const Footer = () => {
 
   return (
     <div
-      className="mt-[100px] relative"
+      className="mt-[100px]"
       style={{ fontFamily: "FTHabitRegular" }}
       ref={footerRef}
     >
-      <img src={img1} alt="img" className="w-full h-[600px] object-cover" />
-      <div className="absolute left-[40px] right-[40px] bottom-0 transform bg-white px-6 py-4 text-black rounded-md text-center">
+      <ContactUs />
+      <div className="mx-[40px] mt-[20px] bg-white px-6 py-4 text-black rounded-4xl shadow-2xl">
         <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 p-[40px] border-b border-gray-300">
           <div>
             <h2 className="text-xl font-semibold mb-4">Granite Elegance</h2>
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="ml-[60px]">
             <h3 className="text-sm font-semibold mb-2 uppercase tracking-wider">
               Collections
             </h3>
@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="ml-[60px]">
             <h3 className="text-sm font-semibold mb-2 uppercase tracking-wider">
               Company
             </h3>
@@ -76,7 +76,7 @@ const Footer = () => {
               <li>Contact</li>
             </ul>
           </div>
-          <div>
+          <div className="ml-[60px]">
             <h3 className="text-sm font-semibold mb-2 uppercase tracking-wider">
               Information
             </h3>

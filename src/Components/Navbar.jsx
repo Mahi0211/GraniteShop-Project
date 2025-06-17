@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`rounded flex justify-between w-full py-10 px-6 fixed top-0 z-50 backdrop-blur-md bg-white/20 border-b border-gray-400/30 transition-transform duration-300 ${
+      className={`rounded-full my-[10px] flex justify-between items-center left-1/2 -translate-x-1/2 p-[10px] min-w-[1200px] fixed top-0 z-50 backdrop-blur-md bg-white/40 border-b border-gray-400/30 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
       ref={navRef}
