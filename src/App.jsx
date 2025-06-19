@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import AboutUs from "./Components/AboutUs";
@@ -9,10 +8,12 @@ import Collection from "./Components/Collection";
 import QnA from "./Components/QnA";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
-// import MapAndTestimonials from "./Components/MapAndTestimonials";
+import LogoIntro from "./Components/LogoIntro";
 
 const App = () => {
-  return (
+  const [showMainSite, setShowMainSite] = useState(false);
+
+  return showMainSite ? (
     <main className="bg-[#F3F4F6]">
       <Navbar />
       <Hero />
@@ -21,10 +22,11 @@ const App = () => {
       <Services />
       <Collection />
       <QnA />
-      {/* <MapAndTestimonials /> */}
       <Projects />
       <Footer />
     </main>
+  ) : (
+    <LogoIntro onComplete={() => setShowMainSite(true)} />
   );
 };
 

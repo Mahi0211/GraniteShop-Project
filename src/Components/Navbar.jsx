@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "../assets/react.svg";
+import logo from "../assets/Images/LogoR.png";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -57,7 +57,7 @@ const Navbar = () => {
           SERVICES
         </a>
       </div>
-      <img src={logo} alt="" />
+      <img src={logo} alt="" className="w-[50px]" />
       <ul className="flex justify-around w-1/2">
         <a href="#gallery" className="cursor-pointer">
           GALLERY

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ContactUs from "./ContactUs";
+import logo from "../assets/Images/Logo-removebg.png"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,6 +31,7 @@ const Footer = () => {
 
   return (
     <div
+    id="contact"
       className="mt-[100px]"
       style={{ fontFamily: "FTHabitRegular" }}
       ref={footerRef}
@@ -38,7 +40,8 @@ const Footer = () => {
       <div className="mx-[40px] mt-[20px] bg-white px-6 py-4 text-black rounded-4xl shadow-2xl">
         <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 p-[40px] border-b border-gray-300">
           <div>
-            <h2 className="text-xl font-semibold mb-4">Granite Elegance</h2>
+            {/* <h2 className="text-xl font-semibold mb-4">Rudra Granites & Tiles</h2> */}
+            <img src={logo} alt="" className="w-[150px] mb-[20px] drop-shadow-[0_8px_10px_rgba(0,0,0,0.4)]" />
             <p className="text-sm opacity-70">
               Crafting timeless surfaces from nature's strength. Where every
               slab tells a story.

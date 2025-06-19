@@ -61,7 +61,7 @@ const Services = () => {
   return (
     <div ref={servicesRef} className="mt-[100px]" id="services">
       <h1 style={{ fontFamily: "Benzin" }} className="text-4xl text-center">
-        Why Choose Granite Elegance?
+        Why Choose <span className="block mt-[20px]">Rudra Granites & Tiles?</span>
       </h1>
       <div className="grid grid-cols-4 gap-8 mx-[40px] mt-[80px]">
         {servicesArr.map((item, index) => (

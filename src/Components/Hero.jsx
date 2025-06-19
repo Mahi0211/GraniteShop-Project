@@ -71,11 +71,11 @@ const Hero = () => {
       <div className="flex w-full items-end absolute bottom-[100px]">
         <h1
           style={{ fontFamily: "Benzin" }}
-          className="text-9xl w-1/2 ml-[40px] pl-[40px] text-white text-shadow-lg"
+          className="text-8xl w-1/2 ml-[40px] pl-[40px] text-white text-shadow-lg"
         >
-          <span ref={graniteRef}>Granite</span>
+          <span ref={graniteRef}>Rudra</span>
           <span ref={eleganceRef} className="block">
-            Elegance
+            Granites & Tiles
           </span>
         </h1>
         <div className="w-1/3 ml-[150px] px-[40px]">
